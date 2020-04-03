@@ -6,19 +6,25 @@ python Telebot Async
 Я не буду рассказывать как создавать такого бота, я просто скажу что нужно добавить в вашего бота для создания асинхронизации функции.
 
 Сверху в импорты добавляем это:
+
 `from telebot.util import async_dec`
 
 Перед функцией, которую мы хотим сделать асинхронной:
+
 `@async_dec()`
 
 Как это будет в коде:
 
 `import telebot`
+
 `from telebot.util import async_dec`
 
 `@async_dec()`
+
 `def iphone(message):`
+
     `print('Тут может быть функция любой сложности')`
+    
     
 `bot.polling()`
 
